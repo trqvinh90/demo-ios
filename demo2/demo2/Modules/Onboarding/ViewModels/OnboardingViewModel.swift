@@ -14,8 +14,17 @@ class OnboardingViewModel {
     func doRegister(completion: (Bool) -> ()) {
         let defaults = UserDefaults.standard
         let email = defaults.string(forKey: defaultsKeys.emailKey)
-        let lastName = defaults.string(forKey: defaultsKeys.lastNameKey)
-        let amount = defaults.integer(forKey: defaultsKeys.amountKey)
-        completion(false)
+        
+        if(email == nil || (email != nil && info?.emailAddress != email)){
+            // do register
+            defaults.set(info?.emailAddress, forKey: defaultsKeys.emailKey)
+            defaults.set(info?.firstName, forKey: defaultsKeys.firstNameKey)
+            defaults.set(info?.lastName, forKey: defaultsKeys.lastNameKey)
+            defaults.set(info?.amount, forKey: defaultsKeys.amountKey)
+            completion(true)
+        }
+        else {
+           completion(false)
+        }
     }
 }

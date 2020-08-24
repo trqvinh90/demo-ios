@@ -29,6 +29,10 @@ class DashboardViewModel {
         if let currentAmount = self.info.value?.amount {
             let newAmount = currentAmount + amount
             info.self.value?.amount = newAmount
+            
+            // save amount to local storage
+            let defaults = UserDefaults.standard
+            defaults.set(newAmount, forKey: defaultsKeys.amountKey)
         }
     }
 }

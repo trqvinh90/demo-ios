@@ -9,9 +9,22 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    let vm = LoginViewModel()
 
+    @IBOutlet weak var emailLabel: UITextField!
+    @IBOutlet weak var passLabel: UITextField!
+    
     @IBAction func doLogin(_ sender: Any) {
-        self.present(DashboardViewController(), animated: true, completion: nil)
+        vm.doLogin(email: emailLabel.text ?? "", password: passLabel.text ?? "", completion: {(flag) -> () in
+            if(flag) {
+                self.present(DashboardViewController(), animated: true, completion: nil)
+            }
+            else {
+                let alert = UIAlertController(title: "Error", message: "Email or password is wrong", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        })
     }
     
     override func viewDidLoad() {
@@ -19,15 +32,4 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

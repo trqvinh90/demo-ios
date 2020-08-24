@@ -9,5 +9,16 @@
 import UIKit
 
 class LoginViewModel {
-    
+   
+    func doLogin(email: String, password: String, completion: (Bool) -> ()) {
+        let defaults = UserDefaults.standard
+        let emailStore = defaults.string(forKey: defaultsKeys.emailKey)
+        
+        if(emailStore != nil && email == emailStore){
+            completion(true)
+        }
+        else {
+            completion(false)
+        }
+    }
 }

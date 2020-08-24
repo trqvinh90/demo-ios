@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A30844A224ED02300019AD58 /* PersonalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30844A124ED02300019AD58 /* PersonalInfo.swift */; };
 		A30844A424ED03100019AD58 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30844A324ED03100019AD58 /* OnboardingViewModel.swift */; };
-		A30844AB24ED06F70019AD58 /* LoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30844AA24ED06F70019AD58 /* LoginInfo.swift */; };
 		A30844AE24ED07630019AD58 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30844AC24ED07630019AD58 /* LoginViewController.swift */; };
 		A30844AF24ED07630019AD58 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30844AD24ED07630019AD58 /* LoginViewController.xib */; };
 		A30844B124ED13EA0019AD58 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30844B024ED13EA0019AD58 /* LoginViewModel.swift */; };
@@ -38,7 +37,6 @@
 		8498C34968EF85EA49023AD8 /* Pods-demo2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo2.release.xcconfig"; path = "Target Support Files/Pods-demo2/Pods-demo2.release.xcconfig"; sourceTree = "<group>"; };
 		A30844A124ED02300019AD58 /* PersonalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfo.swift; sourceTree = "<group>"; };
 		A30844A324ED03100019AD58 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
-		A30844AA24ED06F70019AD58 /* LoginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfo.swift; sourceTree = "<group>"; };
 		A30844AC24ED07630019AD58 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A30844AD24ED07630019AD58 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		A30844B024ED13EA0019AD58 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 		A30844A824ED06940019AD58 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A30844AA24ED06F70019AD58 /* LoginInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -424,7 +421,6 @@
 				A3FC3B2924EBBF0B006FB6F9 /* OnboardingStep2ViewController.swift in Sources */,
 				A3FC3B2524EBB3CE006FB6F9 /* OnboardingStep1ViewController.swift in Sources */,
 				A3105F9E24EE7B4E0034C2EE /* TextFieldExt.swift in Sources */,
-				A30844AB24ED06F70019AD58 /* LoginInfo.swift in Sources */,
 				A30844A224ED02300019AD58 /* PersonalInfo.swift in Sources */,
 				A3FC3B3424EBD2EB006FB6F9 /* RoundedButton.swift in Sources */,
 				A30844B124ED13EA0019AD58 /* LoginViewModel.swift in Sources */,
